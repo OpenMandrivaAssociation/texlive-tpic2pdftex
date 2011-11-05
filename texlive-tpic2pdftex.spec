@@ -16,7 +16,7 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tpic2pdftex.doc.t
 Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tpic2pdftex.x86_64-linux.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
-Requires(post):	texlive-tlpkg
+Requires(pre):	texlive-tlpkg
 Provides:	texlive-tpic2pdftex.bin = %{EVRD}
 Conflicts:	texlive-texmf <= 20110705-3
 Conflicts:	texlive-doc <= 20110705-3
