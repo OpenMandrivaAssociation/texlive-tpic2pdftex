@@ -18,8 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Provides:	texlive-tpic2pdftex.bin = %{EVRD}
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The AWK script converts pic language, embedded inline
@@ -35,7 +33,6 @@ The AWK script converts pic language, embedded inline
 %doc %{_texmfdir}/doc/tpic2pdftex/beamerexample.pic
 %doc %{_texmfdir}/doc/tpic2pdftex/example.pdf
 %doc %{_texmfdir}/doc/tpic2pdftex/example.pic
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -51,5 +48,3 @@ mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
 mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
