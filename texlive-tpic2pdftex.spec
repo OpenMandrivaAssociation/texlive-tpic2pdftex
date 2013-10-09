@@ -1,12 +1,12 @@
-# revision 26689
+# revision 29764
 # category TLCore
 # catalog-ctan /graphics/tpic2pdftex
-# catalog-date 2010-01-16 19:56:06 +0100
+# catalog-date 2012-08-24 00:56:38 +0200
 # catalog-license gpl
 # catalog-version 1.97
 Name:		texlive-tpic2pdftex
 Version:	1.97
-Release:	3
+Release:	4
 Summary:	Use tpic commands in PDFTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/tpic2pdftex
@@ -27,12 +27,12 @@ The AWK script converts pic language, embedded inline
 %files
 %{_bindir}/tpic2pdftex
 %doc %{_mandir}/man1/tpic2pdftex.1*
-%doc %{_texmfdir}/doc/man/man1/tpic2pdftex.man1.pdf
-%doc %{_texmfdir}/doc/tpic2pdftex/Makefile
-%doc %{_texmfdir}/doc/tpic2pdftex/beamerexample.pdf
-%doc %{_texmfdir}/doc/tpic2pdftex/beamerexample.pic
-%doc %{_texmfdir}/doc/tpic2pdftex/example.pdf
-%doc %{_texmfdir}/doc/tpic2pdftex/example.pic
+%doc %{_texmfdistdir}/doc/man/man1/tpic2pdftex.man1.pdf
+%doc %{_texmfdistdir}/doc/tpic2pdftex/Makefile
+%doc %{_texmfdistdir}/doc/tpic2pdftex/beamerexample.pdf
+%doc %{_texmfdistdir}/doc/tpic2pdftex/beamerexample.pic
+%doc %{_texmfdistdir}/doc/tpic2pdftex/example.pdf
+%doc %{_texmfdistdir}/doc/tpic2pdftex/example.pic
 
 #-----------------------------------------------------------------------
 %prep
@@ -45,23 +45,6 @@ The AWK script converts pic language, embedded inline
 mkdir -p %{buildroot}%{_bindir}
 cp -fpa bin/x86_64-linux/tpic2pdftex %{buildroot}%{_bindir}
 mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf %{buildroot}%{_datadir}
+cp -fpar texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
-mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
-
-
-%changelog
-* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.97-3
-+ Revision: 813117
-- Update to latest release.
-
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.97-2
-+ Revision: 757039
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.97-1
-+ Revision: 719787
-- texlive-tpic2pdftex
-- texlive-tpic2pdftex
-- texlive-tpic2pdftex
-
+mv %{buildroot}%{_texmfdistdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
