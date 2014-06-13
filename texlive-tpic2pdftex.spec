@@ -6,7 +6,7 @@
 # catalog-version 1.97
 Name:		texlive-tpic2pdftex
 Version:	1.97
-Release:	8
+Release:	9
 Summary:	Use tpic commands in PDFTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/tpic2pdftex
