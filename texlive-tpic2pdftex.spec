@@ -1,12 +1,12 @@
-# revision 29764
+# revision 33736
 # category TLCore
 # catalog-ctan /graphics/tpic2pdftex
-# catalog-date 2012-08-24 00:56:38 +0200
+# catalog-date 2014-02-26 23:03:13 +0100
 # catalog-license gpl
 # catalog-version 1.97
 Name:		texlive-tpic2pdftex
 Version:	1.97
-Release:	9
+Release:	10
 Summary:	Use tpic commands in PDFTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/tpic2pdftex
