@@ -1,6 +1,6 @@
 Name:		texlive-tpic2pdftex
 Version:	52851
-Release:	1
+Release:	2
 Summary:	Use tpic commands in PDFTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/tpic2pdftex
