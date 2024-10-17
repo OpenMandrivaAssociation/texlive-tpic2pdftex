@@ -3,7 +3,7 @@ Version:	52851
 Release:	2
 Summary:	Use tpic commands in PDFTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/tpic2pdftex
+URL:		https://www.ctan.org/tex-archive/graphics/tpic2pdftex
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tpic2pdftex.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/tpic2pdftex.doc.r%{version}.tar.xz
